@@ -8,7 +8,7 @@ Version: 2.1
 Author URI: http://erhanabay.com
 License: See LICENSE file
 */
-require_once 'vendor/.composer/autoload.php';
+require_once __DIR__. '/autoload.php';
 
 use Hwm\WordPress\Plugin\PluginManager;
 use Gemius\Plugins\CodePlugin;

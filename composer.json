@@ -1,0 +1,18 @@
+{
+    "name": "eabay/wordpress-gemius-plugin",
+    "description": "Gemius script code addition",
+    "keywords": ["wordpress", "gemius"],
+    "homepage": "https://github.com/eabay/wordpress-gemius-plugin",
+    "type": "wordpress-plugin",
+    "license": "MIT",
+    "authors": [
+        {"name": "Erhan Abay", "homepage": "http://erhanabay.com"}
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "eabay/oo-wordpress": "*"
+    },
+    "autoload": {
+        "psr-0": {"Gemius": "src/"}
+    }
+}

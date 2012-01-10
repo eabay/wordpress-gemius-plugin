@@ -1,6 +1,6 @@
 # WordPress Gemius Plugin
 
-[Gemius] script code addition.
+This plugin integrates [Gemius] with WordPress by automatically adding tracking code. You can set different identifiers for home and all other pages from settings page.
 
 ## Installation
 

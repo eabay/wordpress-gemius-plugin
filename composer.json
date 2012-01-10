@@ -1,6 +1,6 @@
 {
     "name": "eabay/wordpress-gemius-plugin",
-    "description": "Gemius script code addition",
+    "description": "This plugin integrates Gemius with WordPress by automatically adding tracking code.",
     "keywords": ["wordpress", "gemius"],
     "homepage": "https://github.com/eabay/wordpress-gemius-plugin",
     "type": "wordpress-plugin",

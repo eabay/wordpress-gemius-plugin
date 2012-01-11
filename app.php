@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Gemius
+Plugin Name: Gemius Tracking Code
 Plugin URI: https://github.com/eabay/wordpress-gemius-plugin
-Description: This plugin integrates Gemius with WordPress by automatically adding tracking code. You can set different identifiers for home and all other pages from settings page.
+Description: This plugin integrates Gemius and WordPress by automatically adding tracking code. You can set different identifiers for home and all other pages from settings page.
 Author: Erhan Abay
-Version: 2.1.2
+Version: 2.1.3
 Author URI: http://erhanabay.com
 License: See LICENSE file
 */

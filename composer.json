@@ -1,7 +1,7 @@
 {
     "name": "eabay/wordpress-gemius-plugin",
-    "description": "This plugin integrates Gemius with WordPress by automatically adding tracking code.",
-    "keywords": ["wordpress", "gemius"],
+    "description": "Integrates Gemius and WordPress by adding Gemius tracking code.",
+    "keywords": ["wordpress", "gemius", "analytics", "tracking code"],
     "homepage": "https://github.com/eabay/wordpress-gemius-plugin",
     "type": "wordpress-plugin",
     "license": "MIT",

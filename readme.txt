@@ -4,7 +4,7 @@ Donate link: http://erhanabay.com
 Tags: gemius, tracking code, analytics
 Requires at least: 2.9
 Tested up to: 3.3
-Stable tag: 2.1.3
+Stable tag: 2.1.4
 
 Integrates Gemius and WordPress by adding Gemius tracking code.
 
@@ -40,6 +40,9 @@ Use [issues](https://github.com/eabay/wordpress-gemius-plugin/issues) for your b
 
 
 == Changelog ==
+
+= 2.1.4 =
+Fixed bug: Tracking code added although identifier is not available.
 
 = 2.1.3 =
 Updates for WordPress plugins directory standarts.

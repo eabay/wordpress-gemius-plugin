@@ -47,7 +47,19 @@ class CodePlugin
             return;
         }
         
-        $identifier = is_home() ? $settings['identifier_homepage'] : $settings['identifier_others']; 
+        if (is_home()) {
+            if (empty($settings['identifier_homepage'])) {
+                return;
+            } else {
+                $identifier = $settings['identifier_homepage'];
+            }
+        } else {
+            if (empty($settings['identifier_others'])) {
+                return;
+            } else {
+                $identifier = $settings['identifier_others'];
+            }
+        }
         
         printf('<script type="text/javascript">var pp_gemius_identifier = new String(\'%s\');document.write(\'<script src="%s"><\/script>\');</script>', $identifier, plugins_url('assets/js/xgemius.js', $this->pluginPath));
     }

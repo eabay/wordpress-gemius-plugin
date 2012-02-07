@@ -48,7 +48,7 @@ class EmbedCodePlugin
         
         printf('<script type="text/javascript">var pp_gemius_identifier = new String(\'%s\');</script>', $identifier);
     	
-    	$script = realpath(__DIR__.'/../../../assets/js/xgemius.js');
+    	$script = realpath(__DIR__.'/../../assets/js/xgemius.js');
     	
     	wp_enqueue_script(self::OPTIONS_KEY, str_replace(ABSPATH, '/', $script), null, filemtime($script));
     }

@@ -1,22 +1,15 @@
 <?php
 
-namespace Gemius\Plugins;
+namespace Gemius;
 
 use Hwm\WordPress\Settings\SettingsPage;
 use Hwm\WordPress\Settings\Section;
 use Hwm\WordPress\Settings\Field\TextField;
 
 /** @Plugin */
-class CodePlugin
+class EmbedCodePlugin
 {
     const OPTIONS_KEY = 'gemius_options';
-    
-    protected $pluginPath;
-    
-    public function __construct($pluginPath)
-    {
-        $this->pluginPath = $pluginPath;
-    }
     
     /** @Settings */
     public function settings()
@@ -47,20 +40,16 @@ class CodePlugin
             return;
         }
         
-        if (is_home()) {
-            if (empty($settings['identifier_homepage'])) {
-                return;
-            } else {
-                $identifier = $settings['identifier_homepage'];
-            }
-        } else {
-            if (empty($settings['identifier_others'])) {
-                return;
-            } else {
-                $identifier = $settings['identifier_others'];
-            }
+        $identifier = is_home() ? $settings['identifier_homepage'] : $settings['identifier_others'];
+        
+        if (empty($identifier)) {
+        	return;
         }
         
-        printf('<script type="text/javascript">var pp_gemius_identifier = new String(\'%s\');document.write(\'<script src="%s"><\/script>\');</script>', $identifier, plugins_url('assets/js/xgemius.js', $this->pluginPath));
+        printf('<script type="text/javascript">var pp_gemius_identifier = new String(\'%s\');</script>', $identifier);
+    	
+    	$script = realpath(__DIR__.'/../../../assets/js/xgemius.js');
+    	
+    	wp_enqueue_script(self::OPTIONS_KEY, str_replace(ABSPATH, '/', $script), null, filemtime($script));
     }
 }

@@ -11,7 +11,7 @@ License: See LICENSE file
 require_once __DIR__. '/vendor/.composer/autoload.php';
 
 use Hwm\WordPress\Plugin\PluginManager;
-use Gemius\Plugins\CodePlugin;
+use Gemius\EmbedCodePlugin;
 
 $pm = new PluginManager;
-$pm->addPlugin(new CodePlugin(__FILE__));
+$pm->addPlugin(new EmbedCodePlugin);

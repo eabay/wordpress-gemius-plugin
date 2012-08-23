@@ -1,5 +1,5 @@
 {
-    "name": "eabay/wordpress-gemius-plugin",
+    "name": "eabay/gemius-tracking-code",
     "description": "Integrates Gemius and WordPress by adding Gemius tracking code.",
     "keywords": ["wordpress", "gemius", "analytics", "tracking code"],
     "homepage": "https://github.com/eabay/wordpress-gemius-plugin",
@@ -8,9 +8,11 @@
     "authors": [
         {"name": "Erhan Abay", "homepage": "http://erhanabay.com"}
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.2",
-        "eabay/oo-wordpress": "*"
+        "composer/installers": "*",
+        "eabay/oow": "*"
     },
     "autoload": {
         "psr-0": {"Gemius": "src/"}

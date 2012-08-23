@@ -2,9 +2,9 @@
 
 namespace Gemius;
 
-use Hwm\WordPress\Settings\SettingsPage;
-use Hwm\WordPress\Settings\Section;
-use Hwm\WordPress\Settings\Field\TextField;
+use Oow\Settings\SettingsPage;
+use Oow\Settings\Section;
+use Oow\Settings\Field\TextField;
 
 /** @Plugin */
 class EmbedCodePlugin
@@ -32,7 +32,7 @@ class EmbedCodePlugin
     }
     
     /** @Action(tag="wp_head") */
-    public function addScript($param)
+    public function addScript()
     {
         $settings = get_option(self::OPTIONS_KEY);
         

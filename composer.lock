@@ -1,0 +1,31 @@
+{
+    "hash": "bed0734a74256e49a53e687b330e39db",
+    "packages": [
+        {
+            "package": "composer/installers",
+            "version": "dev-master",
+            "source-reference": "5259785dce8ea0585de1a1e5659ed09b1156d5fa",
+            "commit-date": "1345483036"
+        },
+        {
+            "package": "doctrine/common",
+            "version": "2.2.x-dev",
+            "source-reference": "b846809f90b35a9415910cebcfcfe51b7c9a6efc",
+            "commit-date": "1343558619"
+        },
+        {
+            "package": "eabay/oow",
+            "version": "dev-master-dev",
+            "source-reference": "453927fd855d61ba82e14b5f84359315ffc4e2c6",
+            "commit-date": "1338893521"
+        }
+    ],
+    "packages-dev": null,
+    "aliases": [
+
+    ],
+    "minimum-stability": "dev",
+    "stability-flags": [
+
+    ]
+}
